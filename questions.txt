@@ -1,0 +1,12 @@
+
+Why are there only 6 <h> tags?
+
+    The number six was not arbitrary. When HTML was first created by Tim Berners-Lee, it was based on the Standard Generalized Markup Language (SGML), 
+    which itself utilized six levels of headings. The structure was designed to facilitate the exchange of academic and technical documents, and six levels 
+    were considered a sufficient "sweet spot" for most document hierarchies in academia and publishing. 
+
+    <h1>: The main title or subject of the entire page.
+    <h2>: Section titles.
+    <h3>: Sub-section titles within an <h2> section.
+    <h4> - <h6>: Further, less important levels of subheadings. 
+

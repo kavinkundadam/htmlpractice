@@ -4,10 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Practice</title>
+
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+
+        
+        /* Link Colours */
+        a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+
+        a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
 
-    <h1> New Chapter </h1>
-    
+    <h1 id="C1"> First Chapter </h1>
+
+    <!-- HTML Element -->
+    <!-- <tagname - openingtag> Content goes here... </tagname - closingtag> -->
+
+        <h2> Elements </h2>
+        <h2> Heading & Paragraph </h2>
+
+        <!-- Heading <h1>, <h2>, <h3>, <h4>, <h5>, <h6> -->
+        <h1> Heading - 1 </h1>
+        <h2> Heading - 2 </h2>
+        <h3> Heading - 3 </h3>
+        <h4> Heading - 4 </h4>
+        <h5> Heading - 5 </h5>
+        <h6> Heading - 6 </h6>
+
+        <p title="Description for this paragraph"> 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>  <!-- <br>  - Breaks the elements to next line -->
+            Molestias et cum eveniet ab rem pariatur, obcaecati eos earum perspiciatis 
+            repellat dicta dolorum voluptatum in, sed quasi adipisci nemo aspernatur 
+            quibusdam hic corporis ratione illum a quisquam sit ipsa debitis? 
+            Saepe ducimus ut provident recusandae?
+        </p>
+
+        <hr> <!-- <hr>  - Horizontal line -->
+
+        <!-- Attributes -->
+        <!-- Provides additional information and name/value pairs like: name="value" -->
+
+        <h2> Attributes </h2>
+
+        <!-- The href attribute specifies the URL of the page the link goes to (Absolute URL)-->
+        <a href="https://www.google.com/" target="_blank"> Link to New Page</a> <br>
+        <a href="https://www.google.com/" target="_blank"> Target - Blank (Opens in next Page)</a> <br>
+        <a href="https://www.google.com/" target="_self"> Target - Self (Opens in same page)</a> <br>
+        <a href="https://www.google.com/" target="_parent"> Target - Parent (Opens in same page)</a> <br>
+        <a href="https://www.google.com/" target="_top"> Target - Top (Opens in new window)</a> <br>
+
+        <!-- The src attribute specifies the path to the image to be displayed (Relative URL)--> 
+        <img src="../asserts/2.png" alt="Number Image"> <br> 
+        <img src="../ss/asserts/2.png" alt="Number Image"> 
+
+        <!-- Link to Email -->
+        <a href="mailto:someone@example.com">Send email</a>
+        
+        <hr> 
+        
+        <!-- Styles -----) <tagname style="property:value;"> --> 
+        <h2> Styles </h2>
+
+        <h1 style="color:blue;">Text in Blue Colour</h1>
+        <p style="color:red;">Text in Red Colour</p>
+        <p style="font-family:arial; text-align:center">Font in arial and text aligned in center</p>
+
+        <hr> 
+        
+        <!-- Formatting --> 
+        <h2> Formatting Elements </h2>
+        <p>
+            This is a sample <b> - Bold text </b> and
+            <strong> - Important text <br>
+            <i> - Italic text </i> <br>
+            <em> - Emphasized text </em> <br>
+            <mark> - Marked text </mark> <br>
+            <small> - Smaller text </small> <br>
+            <del> - Deleted text </del> <br>
+            <ins> - Inserted text </ins> <br>
+            <sub> - Subscript text </sub> <br>
+            <sup> - Superscript text </sup> <br>
+        </p>
+
+        <!-- Quotations --> 
+        <h2> Quotation and Citation </h2>
+
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. 
+        </blockquote>
+
+        <!-- Short quotations -->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!-- Abbreviation -->
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <!-- Address -->
+        <address>
+            Address.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <!-- <cite> tag defines the title of a creative work -->
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+        <!-- Bi-Directional  -->
+         <bdo dir="rtl">This text will be written from right to left</bdo>
+
+         <!-- Using CSS -->
+        <!-- CSS can be added to HTML documents in 3 ways: -->
+            <!-- Inline - by using the style attribute inside HTML elements -->
+                <p style="color:red;">A red paragraph.</p>
+            <!-- Internal - by using a <style> element in the <head> section -->
+                <p>This is a Internal CSS.</p>
+            <!-- External - by using a <link> element to link to an external CSS file -->
+
+        <p style="color:red;">A red paragraph.</p>
+
+        <a href="basics.html#C1">Click here to go Top of the page</a>
+
 </body>
 </html>
