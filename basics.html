@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Practice</title>
 
+
+  <link rel="icon" type="image/x-icon" href="asserts/2.png">
+
     <style>
         body {background-color: powderblue;}
         h1   {color: blue;}
@@ -34,6 +37,13 @@
         color: yellow;
         background-color: transparent;
         text-decoration: underline;
+        }
+
+        body {
+        background-image: url(asserts/2.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         }
     </style>
 
@@ -71,7 +81,7 @@
         <!-- Attributes -->
         <!-- Provides additional information and name/value pairs like: name="value" -->
 
-        <h2> Attributes </h2>
+        <h2> Attributes Eg: href & src</h2>
 
         <!-- The href attribute specifies the URL of the page the link goes to (Absolute URL)-->
         <a href="https://www.google.com/" target="_blank"> Link to New Page</a> <br>
@@ -80,12 +90,37 @@
         <a href="https://www.google.com/" target="_parent"> Target - Parent (Opens in same page)</a> <br>
         <a href="https://www.google.com/" target="_top"> Target - Top (Opens in new window)</a> <br>
 
+        <!-- Link to Email -->
+        <a href="mailto:someone@example.com">Send email</a>
+
         <!-- The src attribute specifies the path to the image to be displayed (Relative URL)--> 
         <img src="../asserts/2.png" alt="Number Image"> <br> 
         <img src="../ss/asserts/2.png" alt="Number Image"> 
+        <p>
+            <img src="../asserts/2.png" alt="Number Image" style="float:left;width:42px;height:42px;"> 
+            The image will float to the left of the text.
+        </p>
 
-        <!-- Link to Email -->
-        <a href="mailto:someone@example.com">Send email</a>
+        <!-- Image Map -->
+
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        </map>
+
+            -> rect - defines a rectangular region
+            -> circle - defines a circular region
+            -> poly - defines a polygonal region
+            -> default - defines the entire region
+
+        <picture>
+            <source media="(min-width: 650px)" srcset="img_food.jpg">
+            <source media="(min-width: 465px)" srcset="img_car.jpg">
+            <img src="/asserts/2.png">
+        </picture>
         
         <hr> 
         
