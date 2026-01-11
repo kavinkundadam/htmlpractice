@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline Elements</title>
+    <link rel="icon" type="image" href="asserts/2.png">
+
+    <style>
+        .city{
+            background-color: bisque;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> HTML Block and Inline Elements </h1> 
+
+    <!-- Blocklevel Elements -->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perferendis? </p>
+    <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, repellat. </div>
+
+    <!-- Inline Elements -->
+     <span> Lorem ipsum dolor sit amet.</span>
+
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <!-- HTML Buttons -->
+
+    <button type="button">Normal Button</button>
+    <button type="submit" onclick="alert('Submitted')">Submit</button>
+    <button type="reset">Reset</button>
+    
+
+    <!-- HTML Iframe Syntax -->
+        The HTML <!-- <iframe> --> tag specifies an inline frame.
+
+        An inline frame is used to embed another document within the current HTML document.
+
+        Syntax
+        <!-- <iframe src="url" title="description"></iframe> -->
+         <iframe src="https://www.youtube.com/" title="Google website"></iframe>
+
+    <!-- HTML JacvaScript -->
+
+        <script>
+            document.getElementById("city").innerHTML = "Hello Javascript"
+        </script>
+
+        <noscript> Defines an alternate content for users that do not support client-side scripts </noscript>
+
+    <!-- HTML File Path -->
+
+    <!-- Relative File Path -->
+        Path	                        Description
+        <img src="picture.jpg">	        The "picture.jpg" file is located in the same folder as the current page
+        <img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+        <img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+        <img src="../picture.jpg">      The "picture.jpg" file is located in the folder one level up from the current folder
+
+    <!-- Absolute File Path -->
+        <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+    Define the character set used:
+        <meta charset="UTF-8">
+    Define keywords for search engines:
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+    Define a description of your web page:
+        <meta name="description" content="Free Web tutorials">
+    Define the author of a page:
+        <meta name="author" content="John Doe">
+    Refresh document every 30 seconds:
+        <meta http-equiv="refresh" content="30">
+    Setting the viewport to make your website look good on all devices:
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+
+    <pre>
+        <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+        </code>
+    </pre>
+
+    <kbd> Ctrl+S</kbd>
+    <samp> File Not found.</samp> Sample Output.
+
+    A semantic element clearly describes its meaning to both the browser and the developer.
+
+        Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+        Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content.
+
+    <figure>
+        <img src="asserts/2.png" alt="Trulli">
+        <figcaption>Fig1. - Number Two.</figcaption>
+    </figure>
+
+    What are Emojis?
+        Emojis look like images, but they are not.
+        Emojis are letters (characters) from the UTF-8 (Unicode) character set:
+        😄 😍 💗
+        UTF-8 covers almost all of the characters and symbols in the world.
+
+</body>
+</html>

@@ -10,3 +10,17 @@ Why are there only 6 <h> tags?
     <h3>: Sub-section titles within an <h2> section.
     <h4> - <h6>: Further, less important levels of subheadings. 
 
+What happens if we applied type for unordered list in html?
+
+    Applying the type attribute to an unordered list (<ul>) in HTML is possible, but it is considered deprecated and 
+    may have unpredictable or no effect in modern web browsers.
+
+What are Emojis?
+    Emojis look like images, but they are not.
+    Emojis are letters (characters) from the UTF-8 (Unicode) character set:
+    😄 😍 💗
+    UTF-8 covers almost all of the characters and symbols in the world.
+
+
+Note: 
+    1. An inline element cannot contain a block-level element!
